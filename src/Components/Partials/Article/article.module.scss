@@ -1,0 +1,50 @@
+@import "../Variables/variables.module.scss";
+
+
+.myarticle {
+    width: 90%;
+    margin: auto;
+    div {
+        display: grid;
+        grid-template-columns: 80% 20%;
+        align-items: center;
+        h3 {
+            font-size: 6rem;
+            font-weight: 300;
+            font-family: $font-primary;
+            color: $lightblue-color;
+        }
+        a {
+            font-size: 2rem;
+            font-weight: 600;
+            font-family: $font-secondary;
+            color: $grey-color;
+            text-decoration-line: underline;
+            text-underline-offset: 0.3rem;
+        }
+    }
+    i {
+        font-family: $font-secondary;
+        font-size: 2rem;
+    }
+    h5 {
+        font-family: $font-primary;
+        font-size: 4rem;
+        font-weight: 300;
+        color: $lightblue-color;
+        margin-bottom: 0;
+    }
+    .imagearticle {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        p {
+            font-family: $font-secondary;
+            font-size: 2rem;
+            margin: 2rem;
+        }
+        img {
+            width: 100%;
+        }
+    }
+}
+

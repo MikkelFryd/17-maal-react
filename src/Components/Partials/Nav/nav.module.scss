@@ -1,0 +1,17 @@
+@import "../Variables/variables.module.scss";
+
+
+.headernav {
+    display: flex;
+    justify-content: flex-end;
+    width: 94%;
+    gap: 2rem;
+    padding-bottom: 1rem;
+     
+        a {
+            font-family: $font-primary;
+            text-decoration: none;
+            font-size: 1.5rem;
+            color: $lightgrey-color;
+        }
+}

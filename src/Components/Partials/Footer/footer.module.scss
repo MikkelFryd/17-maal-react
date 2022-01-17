@@ -1,0 +1,42 @@
+@import "../Variables/variables.module.scss";
+
+.myfooter {
+    display: grid;
+    grid-template-columns: 50% 25% 25%;
+    width: 100%;
+    background-color: $grey-color;
+    margin-top: 2rem;
+    div {
+        text-align: center;
+        width: 100%;
+        h3 {
+            font-family: $font-primary;
+            font-size: 2rem;
+            text-align: center;
+            color: $lightblue-color;
+            font-weight: 300;
+        }
+        a {
+            font-family: $font-secondary;
+            font-size: 1.5rem;
+            text-align: center;
+            color: $white-color;
+        }
+    }
+    div {
+        h3 {
+            font-family: $font-primary;
+            font-size: 2rem;
+        }
+        p {
+            font-family: $font-secondary;
+            font-size: 2rem;
+            color: $white-color;
+        }
+    }
+    div {
+        img {
+            width: 50%;
+        }
+    }
+}

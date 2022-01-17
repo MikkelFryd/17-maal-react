@@ -1,0 +1,44 @@
+@import "../Variables/variables.module.scss";
+
+
+.middlesection {
+    width: 90%;
+    margin: auto;
+    div {
+        display: grid;
+        grid-template-columns: 80% 20%;
+        align-items: center;
+        h3 {
+            font-size: 6rem;
+            font-weight: 300;
+            font-family: $font-primary;
+            color: $lightblue-color;
+        }
+        a {
+            font-size: 2rem;
+            font-weight: 600;
+            font-family: $font-secondary;
+            color: $grey-color;
+            text-decoration-line: underline;
+            text-underline-offset: 0.3rem;
+        }
+    }
+    i {
+        font-family: $font-secondary;
+        font-size: 2rem;
+    }
+    b {
+        font-family: $font-secondary;
+        font-size: 2rem;
+    }
+    .goalcontainer {
+        display: grid;
+        grid-template-columns: repeat(6, auto);
+        gap: 1rem;
+        margin: auto;
+        
+        img {
+            width: 100%;
+        }
+    }
+}

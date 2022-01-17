@@ -1,0 +1,41 @@
+@import "../Variables/variables.module.scss";
+
+
+.sectionmodule {
+    width: 90%;
+    margin: auto;
+    .sectioncontainer1 {
+    
+        h3 {
+            font-family: $font-primary;
+            font-size: 6rem;
+            color: $lightblue-color;
+            font-weight: 300;
+            margin-bottom: 1rem;
+            margin-top: 3rem;
+        }
+        i {
+            font-size: 2rem;
+            font-family: $font-secondary;
+        }
+    }
+    .sectioncontainer2 {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        margin: auto;
+        margin-top: 2rem;
+        div {
+            padding: 2rem;
+            h5 {
+                font-family: $font-primary;
+                font-weight: 400;
+                font-size: 3rem;
+                color: $lightblue-color;
+            }
+            p {
+                font-family: $font-secondary;
+                font-size: 2rem;
+            }
+        }
+    }
+}

@@ -1,0 +1,36 @@
+@import "../Variables/variables.module.scss";
+
+
+.myheader {
+    margin: 0;
+    justify-content: center;
+    background-color: $grey-color;
+    .gridheader {
+        width: 90%;
+        margin: auto;
+        display: grid;
+        grid-template-columns: 30% 70%;
+        img {
+            width: 80%;
+            margin: auto;
+            padding-top: 3rem;
+        }
+        .headerdiv {
+            margin: auto;
+            .headerh1 {
+                color: $white-color;
+                font-weight: 500;
+                font-size:  $font-size-large;
+                margin: 0;
+                font-family: $font-primary;
+            }
+            .headerh2 {
+                color: $lightblue-color;
+                font-family: $font-primary;
+                font-weight: 300;
+                font-size: 6rem;
+                margin: 0;
+            }
+        }
+    }
+}
