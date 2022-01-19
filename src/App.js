@@ -1,20 +1,31 @@
 import { Header } from './Components/Partials/Header/Header'
-import { Section } from './Components/Partials/Section/Section'
-import { Article } from './Components/Partials/Article/Article'
-import { Contact } from './Components/Partials/Contact/Contact'
-import { Middlesection } from './Components/Partials/Middlesection/Middlesection'
 import { Footer } from './Components/Partials/Footer/Footer'
+// import { Delmålene } from './Pages/Delmålene'
+import { BrowserRouter as Router, Routes, Route } from 'react-router-dom'
+import { Main } from './Components/Partials/Main/Main'
 import './App.css'
+import { GoalsPage } from './Pages/GoalsPage'
+import { SubGoalsPage } from './Pages/SubgoalsPage'
+import { ChallengesPage } from './Pages/ChallengesPage'
+import { ContactPage } from './Pages/ContactPage'
 
 function App() {
+
   return (
    <>
-    <Header/>
-    <Section/>
-    <Middlesection/>
-    <Article/>
-    <Contact/>
-    <Footer/>
+   <Router>
+       <Main>
+       <Header/>
+          <Routes>
+              <Route path="/goalspage" element={<GoalsPage/>}/>
+              <Route path="/subgoalspage" element={<SubGoalsPage/>}/>
+              <Route path="/challengespage" element={<ChallengesPage/>}/>
+              <Route path="/contactpage" element={<ContactPage/>}/>
+              <Route path="/" element={<GoalsPage/>}/>
+          </Routes>
+          <Footer/>
+       </Main>
+   </Router>
    </>
   );
 }

@@ -3,6 +3,7 @@ import Style from './section.module.scss'
 
 export const Section = () => {
     return (
+        <>
         <section className={Style.sectionmodule}>
             <div className={Style.sectioncontainer1}>
             <h3>DE 17 VERDENSMÅL</h3>
@@ -19,5 +20,6 @@ export const Section = () => {
                 </div>
             </div>
         </section>
+        </>
     )
 }

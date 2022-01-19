@@ -2,7 +2,17 @@ import { Nav } from "../Nav/Nav"
 import Style from './header.module.scss'
 import colorwheel from '../../../Assets/Images/ColorWheel.png'
 
-export const Header = () => {
+const navItems = [
+    { name: 'VERDENSMÅLENE', path: '/goalspage' },
+    { name: 'DELMÅLENE', path: '/subgoalspage' },
+    { name: 'UDFORDRINGER', path: '/challengespage' },
+    { name: 'KONTAKT OS', path: '/contactpage' }
+]
+
+export const Header = (props) => {
+
+
+
     return (
         <header className={Style.myheader}>
             <div className={Style.gridheader}>
@@ -12,7 +22,7 @@ export const Header = () => {
                     <h2 className={Style.headerh2}>For sustainable Developement</h2>
                 </div>
             </div>
-            <Nav/>
+            <Nav navItems={navItems}/>
         </header>
     )
 }

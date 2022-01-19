@@ -1,13 +1,14 @@
 import Style from './contact.module.scss'
 import Unlogo from '../../../Assets/Images/UN-Logo-Large.png'
 
-
 export const Contact = () => {
+
+
     return (
         <div className={Style.contactcontainer}>
             <div>
                 <h3>KONTAKT OS</h3>
-                <a href="#top">Tilbage til top</a>
+                <a href=".">Tilbage til top</a>
             </div>
             <i>Kontakt os og hør mere om De Sytten Verdensmål. Udfyld formularen herunder:</i>
             <div className={Style.griddiv}>

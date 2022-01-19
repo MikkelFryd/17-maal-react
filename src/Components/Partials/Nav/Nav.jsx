@@ -1,13 +1,19 @@
 import Style from './nav.module.scss'
+import { Link } from 'react-router-dom'
 
 
-export const Nav = () => {
-    return (
-        <nav className={Style.headernav}>
-            <a href="#verdensmålene">VERDENSMÅLENE</a>
-            <a href="#delmålene">DELMÅLENE</a>
-            <a href="#udfordringer">UDFORDRINGER</a>
-            <a href="#kontakt">KONTAKT</a>
-        </nav>
-    )
+
+export const Nav = props => {
+
+	console.log(props);
+
+	return (
+		<nav className={Style.headernav}>
+				{props && props.navItems && props.navItems.map((value, index) => {
+					return (
+							<Link to={value.path} key={index}>{value.name}</Link>
+					)
+				})}
+		</nav>
+	)
 }
